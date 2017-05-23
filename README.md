@@ -23,3 +23,5 @@ step4: analysing the traceroutes.  goal: use API to download results, parse ripe
    -> just discuss the concepts?
 
 end result: run quirin's script and compare to results in the paper?
+pick your own country and compare to the Germany results in the paper?
+ - are they different, and can you think of reasons why different or not?
