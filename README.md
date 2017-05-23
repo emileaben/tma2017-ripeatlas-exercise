@@ -22,3 +22,4 @@ step4: analysing the traceroutes.  goal: use API to download results, parse ripe
    -> TODO anything simple to extract from the traceroutes
    -> just discuss the concepts?
 
+end result: run quirin's script and compare to results in the paper?
