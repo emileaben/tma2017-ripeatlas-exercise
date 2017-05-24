@@ -1,5 +1,12 @@
 # tma2017-ripeatlas-exercise
 
+## Abstract 
+
+Ripe Atlas is a massively distributed Internet measurement platform that allows for a multitude of pre-defined measurements. In this lab, we will take a research question posed by one of the TMA main conference publications. Step by step, we will discover which features of Ripe Atlas can be used to answer a complex research question, and which subtleties should be taken into consideration when formulating your measurement strategy.
+We will walk through scheduling measurements, obtaining, and parsing results, to how to integrate parsed results into your analyses scripts. The specific measurements covered will be distrubted DNS lookups followed by distributed path measurements, representing a typical measurement pipeline in a research paper.
+
+## Details
+
 intro
 
 step1: 50 DNS names -> resolve to IPs with RIPE Atlas probe resolvers
