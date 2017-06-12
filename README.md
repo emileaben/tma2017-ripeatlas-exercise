@@ -80,8 +80,7 @@ Now we know a list of backend servers.
 Intermediate results:
 
 [Traceroute measurement from Paper -- Germany -- Scripts](https://atlas.ripe.net/measurements/5719601/)  
-
-
+[Sample Traceroute measurement from Paper -- Germany -- Sample Data](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599-head3.json)
 
 
 
@@ -94,11 +93,14 @@ Intermediate results:
 Ideally, everyone runs my script to get the results for his/her country
 
 
-Task1: Download traceroute result, parse it, think about evaluation strategy
+Task1: Download traceroute result -- what format does it have?
+
+[Traceroute measurement from Paper -- Germany -- Scripts](https://atlas.ripe.net/measurements/5719601/)  
+[Sample Traceroute measurement from Paper -- Germany -- Sample Data](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599-head3.json)
 
 After Task1 -- Discussion: What to do with the traceroutes? Come back to Research Question -- how many networks does an adversary have to eavesdrop on to see a majority of APNs logins? --> Map IP addresses in traceroutes to "networks". What is a network? How to do the mapping?
 
-Task2: Map tracerouts to networks -- what does the result look like? Create a table similar to Table X in the paper.
+Task2: Map traceroutes to networks -- what does the result look like? Create a table similar to Table X in the paper.
 
 After Task2: Discuss: Data Structure, Use all networks or exclude some (excluding the APNs AS is reasonable)
 
