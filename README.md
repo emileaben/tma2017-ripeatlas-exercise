@@ -64,19 +64,26 @@ Wrap-up discussion: Now we have found the backend servers for 1 country -- are t
 
 ### Step 2: Path Measurements using Traceroute (30 min)
 
-Now we can extract a set of IP addresses of backend servers. How to schedule our traceroute measurements? What are the parameters, what is our strategy?
+Now we know a list of backend servers. 
+
+*Task1: Define a measurement strategy: What RIPE Atlas settings and probes would you use? Which targets would you probe? Please only probe 1 IP address, though.*
+
+*After Task1* Discuss:
 
 1. Should we measure towards all the IP addresses? Or some? Which? Why?
 	* What do you want to learn from the measurements? 
 2. What probes should we measure from? All? Some? How to select them? Why do they/do they not represent the APNs user base?
 	* Note: In the paper, we just selected 1000 random probes per IP address. A better strategy would have been to only pick probes that were directed towards a certain IP address, but this is significantly more effort. Also, controling for country and source AS might be an idea (but getting 1000 random probes maybe better resembles user population than picking 1 probe per AS)
+3. What specific traceroute settings? TCP? Port?
 
 
-Task1: Run traceroute measurement towards 1 randomly picked IP address.
+Intermediate results:
 
-After Task1: Which probes? Why? Do they represent user bases? Should we control for AS/CC bias? Should we \eg just use probes that have actually resolved that IP address?
+[Traceroute measurement from Paper -- Germany -- Scripts](https://atlas.ripe.net/measurements/5719601/)  
 
-`TODO: Everyone run the measurements for her/his country (only pick DNS replies from that country) OR everyone run global? do range-partitioning on IP addresses to balance load among participants?`
+
+
+
 
 ### Step 3: Analyze results (20 minutes)
 
