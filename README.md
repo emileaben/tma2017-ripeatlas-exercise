@@ -37,6 +37,9 @@ Task1: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolut
   
 After Task1: Discuss -- how many probes per lookup? Which probes? Which detailed setting? How to run the measurement and obtain the result?
 
+Sample measurement from paper: https://atlas.ripe.net/measurements/5500016/
+Sample measurement from June 2017: https://atlas.ripe.net/measurements/8831682
+
 `@Emile: I suggest people are allowed to collaborate, is that fine?`
 
 Task2: Obtain measurement result (from own, or pick 1 of the paper measurements), then parse it (give code for abuf parsing). 
