@@ -31,26 +31,30 @@ From passive observations at 1 Vantage Point (VP), we know that clients resolve 
 
 How to find all global APNs backend IP addresses? --> Globally distributed DNS lookups using Ripe Atlas
 
-Task1: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution (5 minutes)
-`TBD: Should everyone work on her/his country?`
+*Task1: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution, focusing on your home country (5 minutes)*  
+Example: 42-courier.push.apple.com
+
 `TODO: We need a lot of Ripe Atlas accounts and some credits for this`
-  
-After Task1: Discuss -- how many probes per lookup? Which probes? Which detailed setting? How to run the measurement and obtain the result?
+`@Emile: I suggest people are allowed to collaborate, is that fine?`
+
+After Task1: Discuss -- How did they interpret "focus on country"? how many probes per lookup? Which probes? Which detailed setting? How to run the measurement and obtain the result?
 
 Sample measurement from paper: https://atlas.ripe.net/measurements/5500016/
 Sample measurement from June 2017: https://atlas.ripe.net/measurements/8831682
 
-`@Emile: I suggest people are allowed to collaborate, is that fine?`
 
-Task2: Obtain measurement result (from own, or pick 1 of the paper measurements), then parse it (give code for abuf parsing). 
 
-After Task2: Discuss result -- what do we see in the parsed results? CNAME - CNAME - A chain, depending on geography
+*Task2: Now obtain the measurement result (from own, as a fallback pick 1 of the paper measurements), then parse it (give code for abuf parsing).*
+
+Our [parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py).
+
+After Task2: Discuss result -- what do we see in the parsed results? A "CNAME - CNAME - A" chain, depending on geography
 
 `Note: Geographical Clustering -- would be better to precisely map IP addresses to geography`
    
-Link to Intermediate Results: https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/dns
+Link to [Intermediate Results and Parsing Scripts](https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/dns)
 
-Parsed Intermediate Result for Discussion:
+Example Parsed Intermediate Result for Discussion:
 
 ```
 id 54717
@@ -112,9 +116,11 @@ pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.30
 --> Reply depends on geography of probing node
 
 
+Wrap-up discussion: Now we have found the backend servers for 1 country -- are these all servers? Might some be missing?
+
 ### Step 2: Path Measurements using Traceroute (30 min)
 
-Now we have a set of IP addresses. How to schedule our traceroute measurements? What are the parameters, what is our strategy?
+Now we can extract a set of IP addresses of backend servers. How to schedule our traceroute measurements? What are the parameters, what is our strategy?
 
 1. Should we measure towards all the IP addresses? Or some? Which? Why?
 	* What do you want to learn from the measurements? 
