@@ -1,5 +1,7 @@
 # tma2017-ripeatlas-exercise
 
+Emile Aben, Quirin Scheitle
+
 ## Abstract 
 
 Ripe Atlas is a massively distributed Internet measurement platform that allows for a multitude of pre-defined measurements. In this lab, we will take a research question posed by one of the TMA main conference publications. Step by step, we will discover which features of Ripe Atlas can be used to answer a complex research question, and which subtleties should be taken into consideration when formulating your measurement strategy.
@@ -15,7 +17,7 @@ We will walk through scheduling measurements, obtaining, and parsing results, to
 
 ## Details
 
-### Introduction: Research Questions and overall measurement strategy (10 Minutes)
+### Introduction: Research Questions and overall measurement strategy (10m)
 
 RQ: How many networks do you need eavesdropping capabilities to surveil a majority of APNs backend logins?
 
@@ -39,14 +41,16 @@ Example: 42-courier.push.apple.com
 
 After Task1: Discuss -- How did they interpret "focus on country"? how many probes per lookup? Which probes? Which detailed setting? How to run the measurement and obtain the result?
 
-Sample measurement from paper: https://atlas.ripe.net/measurements/5500016/
-Sample measurement from June 2017: https://atlas.ripe.net/measurements/8831682
-
+[Sample measurement from paper](https://atlas.ripe.net/measurements/5500016/)  
+[Sample measurement from June 2017](https://atlas.ripe.net/measurements/8831682)  
+[Script for batch measurements](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/atlas-measure.sh)
 
 
 *Task2: Now obtain the measurement result (from own, as a fallback pick 1 of the paper measurements), then parse it (give code for abuf parsing).*
 
-Our [parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py).
+[Sample measurement result from paper]
+[Sample measurement result from June 2017]
+[Our parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py).
 
 After Task2: Discuss result -- what do we see in the parsed results? A "CNAME - CNAME - A" chain, depending on geography
 
