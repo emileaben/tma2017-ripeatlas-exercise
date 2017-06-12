@@ -48,9 +48,11 @@ After Task1: Discuss -- How did they interpret "focus on country"? how many prob
 
 *Task2: Now obtain the measurement result (from own, as a fallback pick 1 of the paper measurements), then parse it (give code for abuf parsing).*
 
-[Sample measurement result from paper]
-[Sample measurement result from June 2017]
+[Sample measurement result from paper](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/result-5500014.json)
+[Sample measurement result from June 2017](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/RIPE-Atlas-measurement-8831682.json)
 [Our parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py).
+[Sample parsed result from paper]
+[Sample parsed result from June 2017]
 
 After Task2: Discuss result -- what do we see in the parsed results? A "CNAME - CNAME - A" chain, depending on geography
 

@@ -1,0 +1,1159 @@
+id 2303
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 8043 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 24 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.22
+;AUTHORITY
+;ADDITIONAL
+id 34822
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 3086 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-se-courier.push-apple.com.akadns.net.
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.29
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.33
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.34
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.12
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.20
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.70
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.87
+pop-namer-se-courier.push-apple.com.akadns.net. 22 IN A 17.249.140.32
+;AUTHORITY
+;ADDITIONAL
+Parsing failed for probe ID: 10866
+The DNS packet passed to from_wire() is too short.
+id 28131
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 16476 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.17
+;AUTHORITY
+;ADDITIONAL
+id 12672
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 729 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 9 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 39 IN A 17.249.60.24
+;AUTHORITY
+;ADDITIONAL
+id 41955
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 765 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 58 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 42 IN A 17.249.60.18
+;AUTHORITY
+;ADDITIONAL
+id 33215
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28800 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.20
+;AUTHORITY
+akadns.net. 114626 IN NS a3-129.akadns.net.
+akadns.net. 114626 IN NS a13-130.akadns.org.
+akadns.net. 114626 IN NS a9-128.akadns.net.
+akadns.net. 114626 IN NS a1-128.akadns.net.
+akadns.net. 114626 IN NS a18-128.akadns.org.
+akadns.net. 114626 IN NS a7-131.akadns.net.
+akadns.net. 114626 IN NS a12-131.akadns.org.
+akadns.net. 114626 IN NS a28-129.akadns.org.
+akadns.net. 114626 IN NS a5-130.akadns.org.
+akadns.net. 114626 IN NS a11-129.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 114626 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 7982 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 53 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.29
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 11809 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 44 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.29
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23611 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 15 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.32
+;AUTHORITY
+;ADDITIONAL
+id 31716
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 10918 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 49 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.8
+;AUTHORITY
+akadns.net. 118052 IN NS a12-131.akadns.org.
+akadns.net. 118052 IN NS a1-128.akadns.net.
+akadns.net. 118052 IN NS a5-130.akadns.org.
+akadns.net. 118052 IN NS a18-128.akadns.org.
+akadns.net. 118052 IN NS a28-129.akadns.org.
+akadns.net. 118052 IN NS a9-128.akadns.net.
+akadns.net. 118052 IN NS a7-131.akadns.net.
+akadns.net. 118052 IN NS a11-129.akadns.net.
+akadns.net. 118052 IN NS a13-130.akadns.org.
+akadns.net. 118052 IN NS a3-129.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 118052 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23101 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 50 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.21
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 10978 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 38 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 48 IN A 17.249.60.12
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23268 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 9 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.9
+;AUTHORITY
+;ADDITIONAL
+id 57134
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 6528 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.17
+;AUTHORITY
+akadns.net. 19843 IN NS a28-129.akadns.org.
+akadns.net. 19843 IN NS a3-129.akadns.net.
+akadns.net. 19843 IN NS a5-130.akadns.org.
+akadns.net. 19843 IN NS a13-130.akadns.org.
+akadns.net. 19843 IN NS a12-131.akadns.org.
+akadns.net. 19843 IN NS a1-128.akadns.net.
+akadns.net. 19843 IN NS a18-128.akadns.org.
+akadns.net. 19843 IN NS a11-129.akadns.net.
+akadns.net. 19843 IN NS a9-128.akadns.net.
+akadns.net. 19843 IN NS a7-131.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 8452 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 7534 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 41 IN CNAME us-courier.push-apple.com.akadns.net.
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.160.88
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.162.26
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.160.33
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.162.217
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.162.18
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.160.218
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.167.152
+us-courier.push-apple.com.akadns.net. 2 IN A 17.188.162.222
+;AUTHORITY
+akadns.net. 172654 IN NS a7-131.akadns.net.
+akadns.net. 172654 IN NS a12-131.akadns.org.
+akadns.net. 172654 IN NS a11-129.akadns.net.
+akadns.net. 172654 IN NS a13-130.akadns.org.
+akadns.net. 172654 IN NS a9-128.akadns.net.
+akadns.net. 172654 IN NS a18-128.akadns.org.
+akadns.net. 172654 IN NS a1-128.akadns.net.
+akadns.net. 172654 IN NS a3-129.akadns.net.
+akadns.net. 172654 IN NS a28-129.akadns.org.
+akadns.net. 172654 IN NS a5-130.akadns.org.
+;ADDITIONAL
+a1-128.akadns.net. 70349 IN A 193.108.88.128
+a3-129.akadns.net. 67663 IN A 96.7.49.129
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 12560 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 11 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.19
+;AUTHORITY
+;ADDITIONAL
+id 55679
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 16641 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.31
+;AUTHORITY
+akadns.net. 117195 IN NS a7-131.akadns.net.
+akadns.net. 117195 IN NS a9-128.akadns.net.
+akadns.net. 117195 IN NS a1-128.akadns.net.
+akadns.net. 117195 IN NS a13-130.akadns.org.
+akadns.net. 117195 IN NS a28-129.akadns.org.
+akadns.net. 117195 IN NS a11-129.akadns.net.
+akadns.net. 117195 IN NS a12-131.akadns.org.
+akadns.net. 117195 IN NS a5-130.akadns.org.
+akadns.net. 117195 IN NS a3-129.akadns.net.
+akadns.net. 117195 IN NS a18-128.akadns.org.
+;ADDITIONAL
+a1-128.akadns.net. 71036 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 271 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 20 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.12
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.13
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 9218 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 39 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 8 IN A 17.249.60.32
+;AUTHORITY
+;ADDITIONAL
+id 988
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 6528 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.22
+;AUTHORITY
+akadns.net. 19843 IN NS a18-128.akadns.org.
+akadns.net. 19843 IN NS a7-131.akadns.net.
+akadns.net. 19843 IN NS a13-130.akadns.org.
+akadns.net. 19843 IN NS a28-129.akadns.org.
+akadns.net. 19843 IN NS a3-129.akadns.net.
+akadns.net. 19843 IN NS a9-128.akadns.net.
+akadns.net. 19843 IN NS a5-130.akadns.org.
+akadns.net. 19843 IN NS a11-129.akadns.net.
+akadns.net. 19843 IN NS a1-128.akadns.net.
+akadns.net. 19843 IN NS a12-131.akadns.org.
+;ADDITIONAL
+a1-128.akadns.net. 8452 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 11809 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 44 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 55 IN A 17.249.60.34
+;AUTHORITY
+;ADDITIONAL
+id 15058
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28800 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.20
+;AUTHORITY
+akadns.net. 114626 IN NS a13-130.akadns.org.
+akadns.net. 114626 IN NS a5-130.akadns.org.
+akadns.net. 114626 IN NS a28-129.akadns.org.
+akadns.net. 114626 IN NS a18-128.akadns.org.
+akadns.net. 114626 IN NS a9-128.akadns.net.
+akadns.net. 114626 IN NS a12-131.akadns.org.
+akadns.net. 114626 IN NS a7-131.akadns.net.
+akadns.net. 114626 IN NS a11-129.akadns.net.
+akadns.net. 114626 IN NS a1-128.akadns.net.
+akadns.net. 114626 IN NS a3-129.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 114626 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 609 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 26 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 31 IN A 17.249.60.31
+;AUTHORITY
+;ADDITIONAL
+id 47639
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23101 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.12
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 1711 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 32 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 33 IN A 17.249.60.14
+;AUTHORITY
+;ADDITIONAL
+Parsing failed for probe ID: 20875
+The DNS packet passed to from_wire() is too short.
+id 47682
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 25271 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 47 IN A 17.249.60.17
+;AUTHORITY
+;ADDITIONAL
+id 24788
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 27183 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 53 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 17 IN A 17.249.60.30
+;AUTHORITY
+akadns.net. 171156 IN NS a3-129.akadns.net.
+akadns.net. 171156 IN NS a11-129.akadns.net.
+akadns.net. 171156 IN NS a9-128.akadns.net.
+akadns.net. 171156 IN NS a18-128.akadns.org.
+akadns.net. 171156 IN NS a5-130.akadns.org.
+akadns.net. 171156 IN NS a1-128.akadns.net.
+akadns.net. 171156 IN NS a28-129.akadns.org.
+akadns.net. 171156 IN NS a7-131.akadns.net.
+akadns.net. 171156 IN NS a12-131.akadns.org.
+akadns.net. 171156 IN NS a13-130.akadns.org.
+;ADDITIONAL
+a3-129.akadns.net. 171156 IN A 96.7.49.129
+id 44710
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 4097 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 37 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 50 IN A 17.249.60.12
+;AUTHORITY
+;ADDITIONAL
+id 44710
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 7982 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 53 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.12
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.27
+;AUTHORITY
+;ADDITIONAL
+Parsing failed for probe ID: 21870
+The DNS packet passed to from_wire() is too short.
+id 2538
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 407 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 24 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 3 IN A 17.249.60.22
+;AUTHORITY
+;ADDITIONAL
+Parsing failed for probe ID: 21981
+The DNS packet passed to from_wire() is too short.
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 22943 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 1 IN CNAME pop-namer-se-courier.push-apple.com.akadns.net.
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.16
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.74
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.99
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.71
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.10
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.29
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.18
+pop-namer-se-courier.push-apple.com.akadns.net. 0 IN A 17.249.156.73
+;AUTHORITY
+;ADDITIONAL
+id 20057
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 27630 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 56 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 30 IN A 17.249.60.14
+;AUTHORITY
+;ADDITIONAL
+Parsing failed for probe ID: 24628
+The DNS packet passed to from_wire() is too short.
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 62 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 7 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 19 IN A 17.249.60.25
+;AUTHORITY
+;ADDITIONAL
+id 12702
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 7982 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.16
+;AUTHORITY
+;ADDITIONAL
+id 47682
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 4416 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 27 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.12
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 14 IN A 17.249.60.20
+;AUTHORITY
+;ADDITIONAL
+id 61959
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 18787 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.12
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 59 IN A 17.249.60.24
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 396 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 21 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 46 IN A 17.249.60.22
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 4638 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 4 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 24 IN A 17.249.60.25
+;AUTHORITY
+;ADDITIONAL
+id 61959
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 27513 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 47 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.20
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.15
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28800 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.21
+;AUTHORITY
+akadns.net. 94961 IN NS a3-129.akadns.net.
+akadns.net. 94961 IN NS a7-131.akadns.net.
+akadns.net. 94961 IN NS a13-130.akadns.org.
+akadns.net. 94961 IN NS a18-128.akadns.org.
+akadns.net. 94961 IN NS a12-131.akadns.org.
+akadns.net. 94961 IN NS a5-130.akadns.org.
+akadns.net. 94961 IN NS a28-129.akadns.org.
+akadns.net. 94961 IN NS a11-129.akadns.net.
+akadns.net. 94961 IN NS a9-128.akadns.net.
+akadns.net. 94961 IN NS a1-128.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 94961 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 16641 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 15 IN A 17.249.60.32
+;AUTHORITY
+akadns.net. 117195 IN NS a13-130.akadns.org.
+akadns.net. 117195 IN NS a5-130.akadns.org.
+akadns.net. 117195 IN NS a9-128.akadns.net.
+akadns.net. 117195 IN NS a3-129.akadns.net.
+akadns.net. 117195 IN NS a18-128.akadns.org.
+akadns.net. 117195 IN NS a28-129.akadns.org.
+akadns.net. 117195 IN NS a12-131.akadns.org.
+akadns.net. 117195 IN NS a11-129.akadns.net.
+akadns.net. 117195 IN NS a1-128.akadns.net.
+akadns.net. 117195 IN NS a7-131.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 71036 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 7801 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 54 IN A 17.249.60.33
+;AUTHORITY
+akadns.net. 110533 IN NS a7-131.akadns.net.
+akadns.net. 110533 IN NS a5-130.akadns.org.
+akadns.net. 110533 IN NS a13-130.akadns.org.
+akadns.net. 110533 IN NS a9-128.akadns.net.
+akadns.net. 110533 IN NS a18-128.akadns.org.
+akadns.net. 110533 IN NS a3-129.akadns.net.
+akadns.net. 110533 IN NS a11-129.akadns.net.
+akadns.net. 110533 IN NS a12-131.akadns.org.
+akadns.net. 110533 IN NS a1-128.akadns.net.
+akadns.net. 110533 IN NS a28-129.akadns.org.
+;ADDITIONAL
+a1-128.akadns.net. 110533 IN A 193.108.88.128
+id 13
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28751 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 11 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.34
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28800 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.25
+;AUTHORITY
+akadns.net. 101337 IN NS a1-128.akadns.net.
+akadns.net. 101337 IN NS a7-131.akadns.net.
+akadns.net. 101337 IN NS a12-131.akadns.org.
+akadns.net. 101337 IN NS a28-129.akadns.org.
+akadns.net. 101337 IN NS a18-128.akadns.org.
+akadns.net. 101337 IN NS a11-129.akadns.net.
+akadns.net. 101337 IN NS a3-129.akadns.net.
+akadns.net. 101337 IN NS a5-130.akadns.org.
+akadns.net. 101337 IN NS a9-128.akadns.net.
+akadns.net. 101337 IN NS a13-130.akadns.org.
+;ADDITIONAL
+a1-128.akadns.net. 101337 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 12086 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 43 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.10
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 38 IN A 17.249.60.8
+;AUTHORITY
+akadns.net. 69375 IN NS a11-129.akadns.net.
+akadns.net. 69375 IN NS a3-129.akadns.net.
+akadns.net. 69375 IN NS a1-128.akadns.net.
+akadns.net. 69375 IN NS a9-128.akadns.net.
+akadns.net. 69375 IN NS a28-129.akadns.org.
+akadns.net. 69375 IN NS a12-131.akadns.org.
+akadns.net. 69375 IN NS a13-130.akadns.org.
+akadns.net. 69375 IN NS a18-128.akadns.org.
+akadns.net. 69375 IN NS a5-130.akadns.org.
+akadns.net. 69375 IN NS a7-131.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 69375 IN A 193.108.88.128
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 766 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.25
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.18
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.33
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 43 IN A 17.249.60.24
+;AUTHORITY
+;ADDITIONAL
+id 20738
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23101 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.30
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 4 IN A 17.249.60.28
+;AUTHORITY
+;ADDITIONAL
+id 62273
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 600 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 600 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.24
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.14
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.17
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.28
+pop-namer-south-courier.push-apple.com.akadns.net. 255 IN A 17.249.60.9
+;AUTHORITY
+apple.com. 283 IN NS nserver3.apple.com.
+apple.com. 283 IN NS adns1.apple.com.
+apple.com. 283 IN NS nserver4.apple.com.
+apple.com. 283 IN NS nserver5.apple.com.
+apple.com. 283 IN NS nserver.apple.com.
+apple.com. 283 IN NS nserver2.apple.com.
+apple.com. 283 IN NS nserver6.apple.com.
+apple.com. 283 IN NS adns2.apple.com.
+;ADDITIONAL
+nserver3.apple.com. 283 IN A 17.112.144.50
+adns1.apple.com. 283 IN A 17.151.0.151
+nserver4.apple.com. 283 IN A 17.112.144.59
+nserver5.apple.com. 283 IN A 17.171.63.30
+nserver.apple.com. 283 IN A 17.254.0.50
+nserver2.apple.com. 283 IN A 17.254.0.59
+nserver6.apple.com. 283 IN A 17.171.63.40
+adns2.apple.com. 283 IN A 17.151.0.152
+id 45298
+opcode QUERY
+rcode REFUSED
+flags QR RD
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+;AUTHORITY
+;ADDITIONAL
+id 45298
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 23611 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 15 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.32
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.23
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.22
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.15
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 25 IN A 17.249.60.19
+;AUTHORITY
+;ADDITIONAL
+id 37849
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 21973 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 19 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.11
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.13
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.8
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.19
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.21
+pop-namer-south-courier.push-apple.com.akadns.net. 52 IN A 17.249.60.14
+;AUTHORITY
+;ADDITIONAL
+id 13206
+opcode QUERY
+rcode NOERROR
+flags QR RD RA
+;QUESTION
+1-courier.push.apple.com. IN A
+;ANSWER
+1-courier.push.apple.com. 28800 IN CNAME 1.courier-push-apple.com.akadns.net.
+1.courier-push-apple.com.akadns.net. 60 IN CNAME pop-namer-south-courier.push-apple.com.akadns.net.
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.31
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.34
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.9
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.26
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.27
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.16
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.29
+pop-namer-south-courier.push-apple.com.akadns.net. 60 IN A 17.249.60.33
+;AUTHORITY
+akadns.net. 105519 IN NS a13-130.akadns.org.
+akadns.net. 105519 IN NS a18-128.akadns.org.
+akadns.net. 105519 IN NS a12-131.akadns.org.
+akadns.net. 105519 IN NS a9-128.akadns.net.
+akadns.net. 105519 IN NS a3-129.akadns.net.
+akadns.net. 105519 IN NS a11-129.akadns.net.
+akadns.net. 105519 IN NS a28-129.akadns.org.
+akadns.net. 105519 IN NS a7-131.akadns.net.
+akadns.net. 105519 IN NS a5-130.akadns.org.
+akadns.net. 105519 IN NS a1-128.akadns.net.
+;ADDITIONAL
+a1-128.akadns.net. 105519 IN A 193.108.88.128
