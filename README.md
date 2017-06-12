@@ -46,81 +46,19 @@ After Task1: Discuss -- How did they interpret "focus on country"? how many prob
 [Script for batch measurements](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/atlas-measure.sh)
 
 
-*Task2: Now obtain the measurement result (from own, as a fallback pick 1 of the paper measurements), then parse it (give code for abuf parsing).*
+*Task2: Now obtain the measurement result (from own, as a fallback pick 1 of the paper measurements), then parse it. Use [this script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py) as a start.*
 
-[Sample measurement result from paper](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/result-5500014.json)
-[Sample measurement result from June 2017](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/RIPE-Atlas-measurement-8831682.json)
-[Our parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py).
-[Sample parsed result from paper]
-[Sample parsed result from June 2017]
+[Sample measurement result from paper](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/result-5500014.json)  
+[Sample measurement result from June 2017](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/RIPE-Atlas-measurement-8831682.json)  
+[Our parsing script](https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/dns/parse-results.py)  
+[Sample parsed result from paper](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/result-5500014.json.parsed.txt)  
+[Sample parsed result from June 2017](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/RIPE-Atlas-measurement-8831682.json.parsed.txt)  
 
 After Task2: Discuss result -- what do we see in the parsed results? A "CNAME - CNAME - A" chain, depending on geography
 
-`Note: Geographical Clustering -- would be better to precisely map IP addresses to geography`
-   
-Link to [Intermediate Results and Parsing Scripts](https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/dns)
+(Open 1 of the parsed results above, github displays them nicely)
 
-Example Parsed Intermediate Result for Discussion:
-
-```
-id 54717
-opcode QUERY
-rcode NOERROR
-flags QR RD RA
-;QUESTION
-1-courier.push.apple.com. IN A
-;ANSWER
-1-courier.push.apple.com. 4636 IN CNAME 1.courier-push-apple.com.akadns.net.
-1.courier-push-apple.com.akadns.net. 8 IN CNAME pop-eur-central-courier.push-apple.com.akadns.net.
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.22
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.18
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.12
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.30
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.15
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.32
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.16
-pop-eur-central-courier.push-apple.com.akadns.net. 59 IN A 17.252.28.10
-;AUTHORITY
-;ADDITIONAL
-id 17387
-opcode QUERY
-rcode NOERROR
-flags QR RD RA
-;QUESTION
-1-courier.push.apple.com. IN A
-;ANSWER
-1-courier.push.apple.com. 20218 IN CNAME 1.courier-push-apple.com.akadns.net.
-1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-eur-scan-courier.push-apple.com.akadns.net.
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.18
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.16
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.22
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.21
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.30
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.25
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.23
-pop-eur-scan-courier.push-apple.com.akadns.net. 59 IN A 17.252.108.8
-;AUTHORITY
-;ADDITIONAL
-id 18897
-opcode QUERY
-rcode NOERROR
-flags QR RD RA
-;QUESTION
-1-courier.push.apple.com. IN A
-;ANSWER
-1-courier.push.apple.com. 12757 IN CNAME 1.courier-push-apple.com.akadns.net.
-1.courier-push-apple.com.akadns.net. 59 IN CNAME pop-eur-benelux-courier.push-apple.com.akadns.net.
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.19
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.13
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.9
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.14
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.8
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.21
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.20
-pop-eur-benelux-courier.push-apple.com.akadns.net. 59 IN A 17.252.76.30
-```
---> Reply depends on geography of probing node
-
+--> Reply depends on geography of probing node, keep this in mind!
 
 Wrap-up discussion: Now we have found the backend servers for 1 country -- are these all servers? Might some be missing?
 
