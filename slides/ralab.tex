@@ -1,0 +1,490 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TUM-Vorlage: Präsentation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Rechteinhaber:
+%     Technische Universität München
+%     https://www.tum.de
+% 
+% Gestaltung:
+%     ediundsepp Gestaltungsgesellschaft, München
+%     http://www.ediundsepp.de
+% 
+% Technische Umsetzung:
+%     eWorks GmbH, Frankfurt am Main
+%     http://www.eworks.de
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./Ressourcen/Praesentation/Praeambel.tex} % !!! NICHT ENTFERNEN !!!
+\input{./_Einstellungen.tex}                    % !!! DATEI ANPASSEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{soul}
+\renewcommand{\PersonTitel}{}
+\newcommand{\Datum}{\today}
+
+\renewcommand{\PraesentationFusszeileZusatz}{TMA'17 Ripe Atlas Lab}
+
+\title{TMA 2017 PhD School --- Ripe Atlas Lab}
+\author{Emile Aben, Quirin Scheitle}
+\institute[]{\UniversitaetName \\ \FakultaetName}
+\date[\Datum]{Dublin, June 20, 2017}
+\subject{}
+% Fix terminology
+\usepackage{tikz}
+
+\colorlet{tablelight}{black!15}
+\colorlet{tabledark}{black!40}
+
+\usepackage{xspace}
+\usepackage{todonotes}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+
+\usepackage{hyperref,xcolor,color,colortbl,graphicx,tabularx}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{environ}
+\usepackage{comment}
+\usepackage{subcaption}
+\usepackage{subfloat}
+\usepackage{textgreek}  % for \textSigma
+\usepackage{soul} % for strikethrough using \st
+
+
+
+
+\newcommand{\packet}[3]{
+	\draw[-latex,line width=0.7pt] (#1) to node[above,sloped]{\scriptsize{{#3}}} (#2);}
+
+\newcommand{\dpacket}[3]{
+	\draw[latex-latex,line width=0.7pt] (#1) to node[above,sloped]{\scriptsize{{#3}}} (#2);}
+
+\usepackage{tumcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./Ressourcen/Praesentation/Anfang.tex} % !!! NICHT ENTFERNEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOLIENSTIL: Standard
+%\PraesentationMasterStandard
+
+%\PraesentationTitelseite % Fügt die Startseite ein
+
+\lstset{
+  language=XML,
+  morekeywords={encoding,
+    xs:schema,xs:element,xs:complexType,xs:sequence,xs:attribute},
+  moredelim=**[is][\color{TUMBlauMittel}]{@}{@},
+  moredelim=**[is][\color{TUMOrange}]{@@}{@@},
+  moredelim=**[is][\color{TUMGruen}]{@@@}{@@@},
+  moredelim=**[is][\color{gray!80}]{@@@@}{@@@@},
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{gray}\hookrightarrow\space}},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOLIENSTIL: Standard mit Lehrstuhl-, Fakultäts- und Universitätsnamen im
+% Kopfbereich links
+\PraesentationMasterKopfzeileDreizeiler
+
+\PraesentationTitelseite
+
+\PraesentationMasterStandard
+
+
+\usetikzlibrary{shapes,arrows,shadows}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+	\frametitle{Agenda}
+	\framesubtitle{}
+
+	\textbf{Learning Goals}
+	\begin{itemize}
+		\item Become familiar with Ripe Atlas and its capabilities and use
+		\item Run DNS and Traceroute measurements using Ripe Atlas
+		\item See how to plan measurements and analyze data along the lines of a TMA'17 paper
+	\end{itemize}	
+
+	\textbf{Outline}
+\begin{itemize}
+	\item Background on Research Questions
+	\item DNS Measurements
+	\item Traceroute Measurements
+	\item Mapping to ASes/IXPs
+\end{itemize}	
+
+
+
+\end{frame}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Background}
+
+\end{frame}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Apple Push Notification Service (APNs)}
+\framesubtitle{Maybe the biggest user of unencrypted TLS Client Certificate Authentication?}
+
+\textbf{APNs integral part of iOS and macOS} -- ``always on''\\
+%\begin{itemize}
+%	\item ``Always on''
+%	\item ``Cellular first''
+%\end{itemize}
+
+\textbf{APNs uses Client Certificates for login}:\\
+\begin{itemize}
+\item Generated at device setup
+\item Very unique cryptographic material (CN, public key, fingerprint)
+\end{itemize}
+
+\begin{verbatim}
+Serial Number: ab:12:34:56:78:9a:bc:de:f0:12
+Issuer: C=US, O=Apple Inc., OU=Apple iPhone, CN=Apple iPhone Device CA
+Validity Not Before: Apr  8 12:34:56 2015 GMT
+Validity Not After : Apr  8 12:34:56 2016 GMT
+Subject: CN=12345678-1234-1234-1234-123456789ABC
+Key ...
+(all data redacted)
+\end{verbatim}
+\end{frame}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Precise User Tracking in APNs}
+\framesubtitle{Several appearances of same device easily linkable}
+
+\textbf{2 attacker types}\\
+\begin{itemize}
+\item \st{Local adversary: Can use MAC addresses and more}
+\item Regional adversary: Access to one or several large networks 
+\item Global adversary: Access to several core networks
+\end{itemize}
+
+\textbf{Regional Adversary -- Validation at Internet Uplink}\\
+\begin{itemize}
+%\item Respect User Privacy---Documented process, highly protected access \\
+%$\rightarrow$ We were allowed to capture TLS CCA at MWN
+\item Can a regional adversary track users?  \textcolor{TUMGreen}{\checkmark}
+\end{itemize}
+
+\textbf{Global Adversary -- Validation through Global Path Measurements}\\
+\begin{itemize}
+	\item How well can a global adversary leverage APNs to track users? \textcolor{red}{\textbf{This exercise}}
+\end{itemize}
+
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Detailed Research Questions and Approach}
+\framesubtitle{}
+
+\textbf{RQ: How many networks do you need eavesdropping capabilities to surveil a majority of APNs backend logins?}
+
+Steps to be taken:
+\begin{itemize}
+	\item What are the backend servers?
+	\item How to measure user population connecting to backend servers?
+	\item How to map this to networks? What is a network in this context?
+\end{itemize}
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Step 1: Finding APNs Backend Servers}
+\framesubtitle{}
+
+From passive observations at 1 Vantage Point (VP), we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17/8 range.
+
+How to find all APNs backend servers?
+\pause
+
+\textbf{Task: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for your home country}
+
+Example: 42-courier.push.apple.com
+
+Note: More experienced Ripe Atlas users are invited to do resolutions for all 50 DNS names.
+
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Step 1: Finding APNs Backend Servers - Discussion}
+\framesubtitle{}
+\begin{itemize}
+	\item What probes did you chose? How many per country?
+	\item Which detailed DNS settings did you chose?
+	\item How did you run the measurement? how to scale it to 50?
+\end{itemize}
+New DNS measurement: \url{https://atlas.ripe.net/measurements/form/} \\
+Sample measurement from paper: \url{https://atlas.ripe.net/measurements/5500016/} \\
+Sample measurement from June 2017: \url{https://atlas.ripe.net/measurements/8831682} \\
+Script for batch measurements: \url{https://github.com/tumi8/cca-privacy/blob/master/ripe\_atlas/dns/atlas-measure.sh} \\
+
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Step 1: Finding APNs Backend Servers - Obtaining the Result}
+\framesubtitle{}
+\textbf{Your measurement should have finished by now -- please obtain the result and parse it} 
+
+Our parsing script: \url{https://github.com/tumi8/cca-privacy/blob/master/ripe\_atlas/dns/parse-results.py}\\
+
+\pause
+ \textbf{Discussion}
+ \vspace{-5mm}
+\begin{itemize}
+	\item Download via Browser or REST
+	\item JSON with abuf
+	\item Region-specific CNAMEs
+	\item Are these all IP addresses? Or just some?
+\end{itemize}
+\small{
+Sample measurement result from paper: \url{https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/dns/result-5500014.json}\\
+Sample measurement result from June 2017: \url{https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/dns/RIPE-Atlas-measurement-8831682.json}\\
+Sample parsed result from paper \url{https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/dns/result-5500014.json.parsed.txt} \\
+Sample parsed result from June 2017 \url{https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/dns/RIPE-Atlas-measurement-8831682.json.parsed.txt}\\
+}
+
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Step 2: Traceroute Path Measurements}
+\framesubtitle{}
+Our DNS queries have yielded a list of backend servers. Coming back to our Research Question, we want to quantify the number of networks an adversary has to eavesdrop on to see a significant number of logins directed to those backend servers. \\
+\textbf{Task: Define and execute a measurement strategy: Which RIPE Atlas settings? Which probes? Which targets?}\\
+Note: Again, Ripe Atlas novices can just run measurements towards 1 target IP address.
+
+\pause
+\textbf{Discussion}
+\begin{itemize}
+	\item Traceroute Details -- \url{https://atlas.ripe.net/measurements/form/}
+	\item Target Selection -- all IP addresses? Some? 
+	\item Probe Selection -- which probes to select? Do these represent the APNs user base
+	\begin{itemize}
+		\item Which probes to select?
+		\item Do they represent the APNs user base? AS/CC bias?
+		\item Only probes that resolved the IP being probed?
+	\end{itemize}
+\end{itemize}
+
+Traceroute measurement from Paper - Germany: \url{https://atlas.ripe.net/measurements/5719601/}
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Step 2: Traceroute Path Measurements}
+\framesubtitle{}
+\textbf{Task: Please download the results -- what format does it have? Ideas how to parse it? What would be the next steps?}
+\pause
+\begin{itemize}
+	\item JSON -- Ripe Atlas Cousteau or raw JSON parsing
+	\item Next step: Map to IXPs and ASes -- Ideas on data sources?
+\end{itemize}
+\pause
+Fortunately, the link \url{https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/traceroute} contains the script ``traceroutes\_to\_asn\_ixp.py.''
+
+\textbf{Task: Call it using ./traceroutes\_to\_asn\_ixp.py your-measurement.json ip2ixp ip2as}\\
+TODO: Link Intermediate results
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Step 3: Analyze Results}
+\framesubtitle{}
+
+How does the result look like for your country? Is that in line with the paper?
+\begin{table}[!h]%[b]
+	\centering		
+	%	\begin{minipage}{\textwidth}
+	%\resizebox{\textwidth}{!}
+	{\begin{tabular}{llrclr}
+			\toprule
+			Rank ~~~~~& \multicolumn{2}{c}{Global} && \multicolumn{2}{c}{Germany}	\\
+			\cmidrule{2-3} \cmidrule{5-6}
+			& IXP/AS  & \textSigma\% Paths &~~~& IXP/AS & \textSigma\% Paths   \\
+			\midrule
+			1 & AS3356 (L3)  & 25\%  && IXP DE-CIX & 30\% \\
+			2 & AS1299 (Telia) & 40\%  && AS3320 (DTAG) & 52\% \\
+			3 & AS174 (Cogent)  & 54\%  && IXP E-CIX & 61\% \\
+			4 & AS7922 (Comcast)~~~  & 61\%  && AS6830 (Liberty) ~~~& 69\% \\
+			5 & AS12322 (Free)  & 67\%  && AS31334 (VF/Kabel D) & 75\%\\
+			6 & AS6830 (Liberty)  & 71\%  && AS1273 (C\&W)& 78\%\\
+			7 & AS4637 (Telstra) & 75\%  && AS3356 (L3)  & 81\% \\
+			8 & AS6453 (Tata) & 78\%  && AS34419 (VF Group)& 84\% \\
+			9 & AS2828 (XO)  & 81\%  && AS680 (DFN) & 86\% \\
+			10 & AS3320 (DTAG) & 84\% && AS6805 (Telefonica) & 88\% \\
+			\bottomrule
+	\end{tabular}}
+\end{table}
+
+\pause
+What do you think of the result overall?
+\end{frame}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Feedback \& Conclusion}
+\begin{itemize}
+	\item How did you like the exercise?
+	\item Useful parts / less useful parts?
+	\item Excited to use Ripe Atlas? :)
+\end{itemize}
+\end{frame}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{OUT / Backup}
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Is global tracking feasible?}
+	\framesubtitle{Methodology}
+	Research Question: How many networks does an attacker have to eavesdrop on to observe a significant share of APNs logins?
+	\begin{itemize}
+		\item We identify APNs backend infrastructure and conduct distributed traceroute \\ measurements towards it
+		\begin{itemize}
+		\item Measurements confirm that clients resolve one of \textit{[1-50]-courier.push.apple.com}
+		\item We globally resolve \textit{[1-50]-courier.push.apple.com} using 1000 Ripe Atlas probes each
+		\item We find 69 /24 subnets and pick one random observed IP address in each of the 69 subnets
+		\item Using 1000 Ripe Atlas probes per measurement, we conduct traceroute measurements towards all 69 IP addresses
+		\end{itemize}
+		\item We map transit router's IP addresses to ISPs and IXPs 
+		%\begin{itemize}
+		%	\item Pitfall: Control for Ripe Atlas probes' home AS!
+		%\end{itemize}
+		\item We count what \% of routes traverses a certain ISP or IXP
+	\end{itemize}	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Is global tracking feasible?}
+\framesubtitle{Eavesdropping capabilities on just 10 networks allows to follow \\APNS messages of over 80\% of users globally or nationally}
+\vspace{-10mm}
+\captionsetup{justification=centering}
+\begin{table}[!h]%[b]
+	\centering		
+	%	\begin{minipage}{\textwidth}
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{llrclr}
+			\toprule
+			Rank ~~~~~& \multicolumn{2}{c}{Global} && \multicolumn{2}{c}{Germany}	\\
+			\cmidrule{2-3} \cmidrule{5-6}
+			& IXP/AS  & \textSigma\% Paths &~~~& IXP/AS & \textSigma\% Paths   \\
+			\midrule
+			1 & AS3356 (L3)  & 25\%  && IXP DE-CIX & 30\% \\
+			2 & AS1299 (Telia) & 40\%  && AS3320 (DTAG) & 52\% \\
+			3 & AS174 (Cogent)  & 54\%  && IXP E-CIX & 61\% \\
+			4 & AS7922 (Comcast)~~~  & 61\%  && AS6830 (Liberty) ~~~& 69\% \\
+			5 & AS12322 (Free)  & 67\%  && AS31334 (VF/Kabel D) & 75\%\\
+			6 & AS6830 (Liberty)  & 71\%  && AS1273 (C\&W)& 78\%\\
+			7 & AS4637 (Telstra) & 75\%  && AS3356 (L3)  & 81\% \\
+			8 & AS6453 (Tata) & 78\%  && AS34419 (VF Group)& 84\% \\
+			9 & AS2828 (XO)  & 81\%  && AS680 (DFN) & 86\% \\
+			10 & AS3320 (DTAG) & 84\% && AS6805 (Telefonica) & 88\% \\
+			\bottomrule
+	\end{tabular}}
+	%	\end{minipage}
+	\label{tab:topnetworks}
+\end{table}
+\vspace{-3mm}
+\small{Note: \% is based on Ripe Atlas probe distribution as a proxy for APNs user distribution.}
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Data, and Code}
+\framesubtitle{}
+
+\textbf{Data and Code: }\\
+%\texttt{\st{https://www.net.in.tum.de/users/scheitle/papers/cca-privacy/master.zip}} \\  % to blamish, others might use this kind of URL
+\url{https://github.com/tumi8/cca-privacy}\\
+\includegraphics[width=0.2\textwidth]{github-qr.png}
+
+Matthias Wachs, \underline{Quirin Scheitle}, and Georg Carle \\ 
+Chair of Network Architectures and Services --- \url{https://net.in.tum.de} \\
+TUM Informatics\\
+
+
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOLIENSTIL: Weisse Schrift auf blauem Grund
+%\PraesentationMasterWeissBlau
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Startseiten                                     %%
+
+% Setzt die Startseite auf eine mit Flaggen als Hintergrund:
+%\PraesentationStartseiteFlaggen
+
+% Setzt die Startseite auf eine mit mit einer Zeichnung des TUM-Uhrenturms:
+%\PraesentationStartseiteUhrenturm
+
+% Setzt die Startseite auf eine ohne Hintergrund:
+%\PraesentationStartseiteLeer
+
+%\PraesentationTitelseite % Fügt die Startseite ein
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\begin{frame}
+%    \PraesentationUeberschriftZweizeilig{Präsentationsmuster}{%
+%        kann auch als Kapiteltrenner verwendet werden}
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FOLIENSTIL: Weisse Schrift auf schwarzem Grund
+%\PraesentationMasterWeissSchwarz
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} % !!! NICHT ENTFERNEN !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
