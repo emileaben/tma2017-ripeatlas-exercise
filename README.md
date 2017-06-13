@@ -36,6 +36,7 @@ How to find all global APNs backend IP addresses? --> Globally distributed DNS l
 *Task1: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution, focusing on your home country (5 minutes)*  
 Example: 42-courier.push.apple.com
 
+`@Emile: I would make it a stretch goal for people familiar with RA to do a full reproduction, while people with little or no experience just follow our path to do it for 1 domain`
 `TODO: We need a lot of Ripe Atlas accounts and some credits for this`
 `@Emile: I suggest people are allowed to collaborate, is that fine?`
 
@@ -98,11 +99,14 @@ Task1: Download traceroute result -- what format does it have?
 [Traceroute measurement from Paper -- Germany -- Scripts](https://atlas.ripe.net/measurements/5719601/)  
 [Sample Traceroute measurement from Paper -- Germany -- Sample Data](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599-head3.json)
 
-After Task1 -- Discussion: What to do with the traceroutes? Come back to Research Question -- how many networks does an adversary have to eavesdrop on to see a majority of APNs logins? --> Map IP addresses in traceroutes to "networks". What is a network? How to do the mapping?
+After Task1 -- Discussion: What to do with the traceroutes? Come back to Research Question -- how many networks does an adversary have to eavesdrop on to see a majority of APNs logins? --> Map IP addresses in traceroutes to "networks". What is a network? How to do the mapping? Should we use all ASes or exlude some?
 
 Task2: Map traceroutes to networks -- what does the result look like? Create a table similar to Table X in the paper.
 
-After Task2: Discuss: Data Structure, Use all networks or exclude some (excluding the APNs AS is reasonable)
+`@Emile: I used an integrated script that takes as inputs (a) traceroute-json (b) IXP-networks (c) routeviews BGP data and then produces the table we are aiming to reproduce`  
+
+`TLSCCAGIT="/Users/scheitle/promotion/git/cca-privacy/ripe_atlas/traceroute" && $TLSCCAGIT/traceroutes_to_asn_ixp.py result-5719599.json $TLSCCAGIT/ixp_subnets_v4.csv  $TLSCCAGIT/routeviews-rv2-20160926-1200.pfx2as  > result-5719599.json.result.txt2`
+
 
 ### Step 4: Discuss usefulness, compare results
 
