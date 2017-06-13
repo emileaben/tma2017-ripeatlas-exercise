@@ -96,8 +96,11 @@ Ideally, everyone runs my script to get the results for his/her country
 
 Task1: Download traceroute result -- what format does it have?
 
-[Traceroute measurement from Paper -- Germany -- Scripts](https://atlas.ripe.net/measurements/5719601/)  
-[Sample Traceroute measurement from Paper -- Germany -- Sample Data](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599-head3.json)
+[Traceroute measurement from Paper -- Germany -- Ripe Atlas](https://atlas.ripe.net/measurements/5719601/)  
+[Traceroute measurement from Paper -- Germany -- Scripts](https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/traceroute/germany)  
+[Sample Traceroute measurement from Paper -- Germany -- Sample Data (3 Routes)](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599-head3.json)
+[Sample Traceroute measurement from Paper -- Germany -- Full Data](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599.json)
+
 
 After Task1 -- Discussion: What to do with the traceroutes? Come back to Research Question -- how many networks does an adversary have to eavesdrop on to see a majority of APNs logins? --> Map IP addresses in traceroutes to "networks". What is a network? How to do the mapping? Should we use all ASes or exlude some?
 
@@ -107,11 +110,18 @@ Task2: Map traceroutes to networks -- what does the result look like? Create a t
 
 `TLSCCAGIT="/Users/scheitle/promotion/git/cca-privacy/ripe_atlas/traceroute" && $TLSCCAGIT/traceroutes_to_asn_ixp.py result-5719599.json $TLSCCAGIT/ixp_subnets_v4.csv  $TLSCCAGIT/routeviews-rv2-20160926-1200.pfx2as  > result-5719599.json.result.txt2`
 
+[Sample Traceroute measurement from Paper -- Germany -- Parsed Result](https://github.com/emileaben/tma2017-ripeatlas-exercise/blob/master/data/traceroute/result-5719599.json.result.txt)
 
-### Step 4: Discuss usefulness, compare results
 
 
-# More ideas, old notes
+### Step 4: Comparison of Results, General discussion, Feedback
+
+* How does the result look like for your country? Is that in line with the paper?
+* What do you think of the result overall?
+* How did you like the exercise? Useful parts / less useful parts? Familiar with Ripe Atlas?
+
+
+# OLD, OUT More ideas, old notes
 
 `Ideally, this exercise would also result in pull requests to refine the reproducibility documentation`
 
