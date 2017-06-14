@@ -24,9 +24,9 @@
 \renewcommand{\PersonTitel}{}
 \newcommand{\Datum}{\today}
 
-\renewcommand{\PraesentationFusszeileZusatz}{TMA'17 Ripe Atlas Lab}
+\renewcommand{\PraesentationFusszeileZusatz}{TMA'17 RIPE Atlas Lab}
 
-\title{TMA 2017 PhD School --- Ripe Atlas Lab}
+\title{TMA 2017 PhD School --- RIPE Atlas Lab}
 \author{Emile Aben, Quirin Scheitle}
 \institute[]{\UniversitaetName \\ \FakultaetName}
 \date[\Datum]{Dublin, June 20, 2017}
@@ -113,8 +113,8 @@
 
 	\textbf{Learning Goals}
 	\begin{itemize}
-		\item Become familiar with Ripe Atlas and its capabilities and use
-		\item Run DNS and Traceroute measurements using Ripe Atlas
+		\item Become familiar with RIPE Atlas and its capabilities and use
+		\item Run DNS and Traceroute measurements using RIPE Atlas
 		\item See how to plan measurements and analyze data along the lines of a TMA'17 paper
 	\end{itemize}	
 
@@ -181,7 +181,7 @@ Key ...
 \item Global adversary: Access to several core networks
 \end{itemize}
 
-\textbf{Regional Adversary -- Validation at Internet Uplink}\\
+\textbf{Regional Adversary -- Feasibility Validation at Internet Uplink}\\
 \begin{itemize}
 %\item Respect User Privacy---Documented process, highly protected access \\
 %$\rightarrow$ We were allowed to capture TLS CCA at MWN
@@ -203,7 +203,7 @@ Key ...
 \frametitle{Detailed Research Questions and Approach}
 \framesubtitle{}
 
-\textbf{RQ: How many networks do you need eavesdropping capabilities to surveil a majority of APNs backend logins?}
+\textbf{Research Question: How many networks do you need to eavesdrop on to surveil a majority of APNs backend logins?}
 
 Steps to be taken:
 \begin{itemize}
@@ -221,7 +221,7 @@ Steps to be taken:
 \frametitle{Step 1: Finding APNs Backend Servers}
 \framesubtitle{}
 
-From passive observations at 1 Vantage Point (VP), we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17/8 range.
+From passive observations at 1 Vantage Point (VP), we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17.0.0.0/8 range.
 
 How to find all APNs backend servers?
 \pause
@@ -236,12 +236,26 @@ Note: More experienced Ripe Atlas users are invited to do resolutions for all 50
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
+\frametitle{Step 0: Prerequisites}
+\framesubtitle{}
+\begin{itemize}
+	\item RIPE Atlas Account
+	\item RIPE Atlas Credits
+	\item Python3
+	\item Github Downloads
+\end{itemize}
+\end{frame}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
 \frametitle{Step 1: Finding APNs Backend Servers - Discussion}
 \framesubtitle{}
 \begin{itemize}
-	\item What probes did you chose? How many per country?
-	\item Which detailed DNS settings did you chose?
-	\item How did you run the measurement? how to scale it to 50?
+	\item What probes did you choose? How many per country?
+	\item Which detailed DNS settings did you choose?
+	\item How did you run the measurement? How to scale it to 50?
 \end{itemize}
 New DNS measurement: \url{https://atlas.ripe.net/measurements/form/} \\
 Sample measurement from paper: \url{https://atlas.ripe.net/measurements/5500016/} \\
