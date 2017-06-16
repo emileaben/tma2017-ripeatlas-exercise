@@ -2,6 +2,10 @@
 
 Emile Aben, Quirin Scheitle
 
+[Participants git](https://github.com/quirins/tma17-ripeatlas-lab-participants/)
+
+This document is rather outdated, please see in `slides/` folder for up-to-date material.
+
 ## Abstract 
 
 Ripe Atlas is a massively distributed Internet measurement platform that allows for a multitude of pre-defined measurements. In this lab, we will take a research question posed by one of the TMA main conference publications. Step by step, we will discover which features of Ripe Atlas can be used to answer a complex research question, and which subtleties should be taken into consideration when formulating your measurement strategy.
