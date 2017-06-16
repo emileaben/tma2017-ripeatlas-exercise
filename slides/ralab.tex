@@ -230,7 +230,7 @@ How to find all APNs backend servers?
 
 Example: 42-courier.push.apple.com
 
-Note: More experienced Ripe Atlas users are invited to do resolutions for all 50 DNS names.
+Note: More experienced RIPE Atlas users are invited to do resolutions for all 50 DNS names.
 
 \end{frame}
 \clearpage
@@ -301,7 +301,7 @@ Sample parsed result from June 2017 \url{https://github.com/quirins/tma17-ripeat
 \framesubtitle{}
 Our DNS queries have yielded a list of backend servers. Coming back to our Research Question, we want to quantify the number of networks an adversary has to eavesdrop on to see a significant number of logins directed to those backend servers. \\
 \textbf{Task: Define and execute a measurement strategy: Which RIPE Atlas settings? Which probes? Which targets?}\\
-Note: Again, Ripe Atlas novices can just run measurements towards 1 target IP address.
+Note: Again, RIPE Atlas novices can just run measurements towards 1 target IP address.
 
 \pause
 \textbf{Discussion}
@@ -327,7 +327,7 @@ Traceroute measurement from Paper - Germany: \url{https://atlas.ripe.net/measure
 \textbf{Task: Please download the results -- what format does it have? Ideas how to parse it? What would be the next steps?}
 \pause
 \begin{itemize}
-	\item JSON -- Ripe Atlas Cousteau or raw JSON parsing
+	\item JSON -- RIPE Atlas Cousteau or raw JSON parsing
 	\item Next step: Map to IXPs and ASes -- Ideas on data sources?
 \end{itemize}
 \pause
@@ -380,7 +380,7 @@ What do you think of the result overall?
 \begin{itemize}
 	\item How did you like the exercise?
 	\item Useful parts / less useful parts?
-	\item Excited to use Ripe Atlas? :)
+	\item Excited to use RIPE Atlas? :)
 \end{itemize}
 \end{frame}
 \clearpage
@@ -404,13 +404,13 @@ What do you think of the result overall?
 		\item We identify APNs backend infrastructure and conduct distributed traceroute \\ measurements towards it
 		\begin{itemize}
 		\item Measurements confirm that clients resolve one of \textit{[1-50]-courier.push.apple.com}
-		\item We globally resolve \textit{[1-50]-courier.push.apple.com} using 1000 Ripe Atlas probes each
+		\item We globally resolve \textit{[1-50]-courier.push.apple.com} using 1000 RIPE Atlas probes each
 		\item We find 69 /24 subnets and pick one random observed IP address in each of the 69 subnets
-		\item Using 1000 Ripe Atlas probes per measurement, we conduct traceroute measurements towards all 69 IP addresses
+		\item Using 1000 RIPE Atlas probes per measurement, we conduct traceroute measurements towards all 69 IP addresses
 		\end{itemize}
 		\item We map transit router's IP addresses to ISPs and IXPs 
 		%\begin{itemize}
-		%	\item Pitfall: Control for Ripe Atlas probes' home AS!
+		%	\item Pitfall: Control for RIPE Atlas probes' home AS!
 		%\end{itemize}
 		\item We count what \% of routes traverses a certain ISP or IXP
 	\end{itemize}	
@@ -448,7 +448,7 @@ What do you think of the result overall?
 	\label{tab:topnetworks}
 \end{table}
 \vspace{-3mm}
-\small{Note: \% is based on Ripe Atlas probe distribution as a proxy for APNs user distribution.}
+\small{Note: \% is based on RIPE Atlas probe distribution as a proxy for APNs user distribution.}
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
