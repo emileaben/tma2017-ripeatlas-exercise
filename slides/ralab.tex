@@ -38,10 +38,9 @@
 \colorlet{tabledark}{black!40}
 
 \usepackage{xspace}
-\usepackage{todonotes}
+%\usepackage{todonotes}
 \usepackage{tikz}
 \usepackage{booktabs}
-
 
 \usepackage{hyperref,xcolor,color,colortbl,graphicx,tabularx}
 \usepackage{pgfplots}
@@ -196,7 +195,6 @@ Key ...
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
@@ -226,8 +224,15 @@ From passive observations at 1 Vantage Point (VP), we know that clients resolve 
 How to find all APNs backend servers?
 \pause
 
-\textbf{Task: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for your home country}
+\textbf{Pick a country you want to work on! \url{http://sg-pub.ripe.net/petros/population_coverage/map.html?version=4&public_only=true}}
+\pause
 
+\textbf{Prerequisites}: Do you have (a) RIPE Atlas Account (b) Voucher? (c) Python3 (d) Github Downloaded?
+\texttt{git clone -{}-recursive git://github.com/quirins/tma17-ripeatlas-lab-participants}
+
+\pause
+
+\textbf{Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for ``your'' country.}\\
 Example: 42-courier.push.apple.com
 
 Note: More experienced RIPE Atlas users are invited to do resolutions for all 50 DNS names.
@@ -235,28 +240,28 @@ Note: More experienced RIPE Atlas users are invited to do resolutions for all 50
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Step 0: Prerequisites}
-\framesubtitle{}
-\begin{itemize}
-	\item RIPE Atlas Account
-	\item RIPE Atlas Credits
-	\item Python3
-	\item Github Download:
-\end{itemize}
-
-\texttt{git clone -{}-recursive git://github.com/quirins/tma17-ripeatlas-lab-participants}
-
-\end{frame}
-\clearpage
+%\begin{frame}
+%\frametitle{Step 0: Prerequisites}
+%\framesubtitle{}
+%\begin{itemize}
+%	\item RIPE Atlas Account
+%	\item RIPE Atlas Credits
+%	\item Python3
+%	\item Github Download:
+%\end{itemize}
+%
+%\texttt{git clone -{}-recursive git://github.com/quirins/tma17-ripeatlas-lab-participants}
+%
+%\end{frame}
+%\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Step 1: Finding APNs Backend Servers - Discussion}
 \framesubtitle{}
 \begin{itemize}
-	\item What probes did you choose? How many per country?
+	\item What probes did you choose? How many per country? \hyperlink{NL example}{\url{http://sg-pub.ripe.net/petros/population_coverage/country.html?name=NL}}
+	% XS4ALL example in NL: lots of probes, but not many users
 	\item Which detailed DNS settings did you choose?
 	\item How did you run the measurement? How to scale it to 50?
 \end{itemize}
@@ -334,7 +339,9 @@ Traceroute measurement from Paper - Germany: \url{https://atlas.ripe.net/measure
 Fortunately, the link \url{https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/traceroute} contains the script ``traceroutes\_to\_asn\_ixp.py.''
 
 \textbf{Task: Call it using ./traceroutes\_to\_asn\_ixp.py your-measurement.json ip2ixp ip2as}\\
-TODO: Link Intermediate results
+
+Sample Result from Paper:\\ \url{https://github.com/quirins/tma17-ripeatlas-lab-participants/blob/master/data/traceroute/result-5719599.json.result.txt}
+
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -382,6 +389,20 @@ What do you think of the result overall?
 	\item Useful parts / less useful parts?
 	\item Excited to use RIPE Atlas? :)
 \end{itemize}
+\vspace{10mm}
+\textbf{Black Belt Track}: Share your results back to the exercise through a pull-request. 
+
+To do so, please use this folder structure:
+\begin{itemize}
+	\item tma17-ripeatlas-lab-participants/results/\$country/[dns|traceroute]
+	\begin{itemize}
+		\item A list of DNS and traceroute measurement IDs
+		\item Intermediate Results (potentially compressed)
+		\item the final table
+		\item a readme file with: your name and a quick description of your approach
+	\end{itemize}
+\end{itemize}
+
 \end{frame}
 \clearpage
 
