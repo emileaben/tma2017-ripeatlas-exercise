@@ -112,14 +112,14 @@
 
 	\textbf{Learning Goals}
 	\begin{itemize}
-		\item Become familiar with RIPE Atlas and its capabilities and use
-		\item Run DNS and Traceroute measurements using RIPE Atlas
+		\item Become familiar with RIPE Atlas, its capabilities, and its use
 		\item See how to plan measurements and analyze data along the lines of a TMA'17 paper
+		\item Run DNS and Traceroute measurements using RIPE Atlas
 	\end{itemize}	
 
 	\textbf{Outline}
 \begin{itemize}
-	\item Background on Research Questions
+	\item Background on Research Questions to be answered
 	\item DNS Measurements
 	\item Traceroute Measurements
 	\item Mapping to ASes/IXPs
@@ -152,7 +152,7 @@
 \textbf{APNs uses Client Certificates for login}:\\
 \begin{itemize}
 \item Generated at device setup
-\item Very unique cryptographic material (CN, public key, fingerprint)
+\item Unique cryptographic material (CN, public key, fingerprint)
 \end{itemize}
 
 \begin{verbatim}
@@ -184,7 +184,7 @@ Key ...
 \begin{itemize}
 %\item Respect User Privacy---Documented process, highly protected access \\
 %$\rightarrow$ We were allowed to capture TLS CCA at MWN
-\item Can a regional adversary track users?  \textcolor{TUMGreen}{\checkmark}
+\item Can a regional adversary track users?  \textbf{\textcolor{TUMGreen}{\checkmark}}
 \end{itemize}
 
 \textbf{Global Adversary -- Validation through Global Path Measurements}\\
@@ -205,55 +205,40 @@ Key ...
 
 Steps to be taken:
 \begin{itemize}
-	\item What are the backend servers?
-	\item How to measure user population connecting to backend servers?
+	\item What and where are the APNs backend servers?
+	\item How to measure paths for user population connecting to backend servers?
 	\item How to map this to networks? What is a network in this context?
 \end{itemize}
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
 \frametitle{Step 1: Finding APNs Backend Servers}
 \framesubtitle{}
 
-From passive observations at 1 Vantage Point (VP), we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17.0.0.0/8 range.
+From passive observations at 1 Vantage Point, we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17.0.0.0/8 range.
 
 How to find all APNs backend servers?
 \pause
 
-\textbf{Pick a country you want to work on! \url{http://sg-pub.ripe.net/petros/population_coverage/map.html?version=4&public_only=true}}
+\textbf{Pick a country you want to work on! Inspiration: \url{http://sg-pub.ripe.net/petros/population_coverage/table.html}}
 \pause
 
-\textbf{Prerequisites}: Do you have (a) RIPE Atlas Account (b) Voucher? (c) Python3 (d) Github Downloaded?
+\textbf{Prerequisites}: \\ 
+Do you have (a) RIPE Atlas Account (b) Voucher? (c) Python3 (d) Github Downloaded? \\
 \texttt{git clone -{}-recursive git://github.com/quirins/tma17-ripeatlas-lab-participants}
 
 \pause
 
-\textbf{Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for ``your'' country.}\\
+\textbf{Task: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for ``your'' country.}\\
 Example: 42-courier.push.apple.com
 
 Note: More experienced RIPE Atlas users are invited to do resolutions for all 50 DNS names.
 
 \end{frame}
 \clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{frame}
-%\frametitle{Step 0: Prerequisites}
-%\framesubtitle{}
-%\begin{itemize}
-%	\item RIPE Atlas Account
-%	\item RIPE Atlas Credits
-%	\item Python3
-%	\item Github Download:
-%\end{itemize}
-%
-%\texttt{git clone -{}-recursive git://github.com/quirins/tma17-ripeatlas-lab-participants}
-%
-%\end{frame}
-%\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -312,8 +297,8 @@ Note: Again, RIPE Atlas novices can just run measurements towards 1 target IP ad
 \textbf{Discussion}
 \begin{itemize}
 	\item Traceroute Details -- \url{https://atlas.ripe.net/measurements/form/}
-	\item Target Selection -- all IP addresses? Some? 
-	\item Probe Selection -- which probes to select? Do these represent the APNs user base
+	\item Target Selection -- all APNs IP addresses? Some? 
+	\item Probe Selection:
 	\begin{itemize}
 		\item Which probes to select?
 		\item Do they represent the APNs user base? AS/CC bias?
@@ -376,7 +361,7 @@ How does the result look like for your country? Is that in line with the paper?
 \end{table}
 
 \pause
-What do you think of the result overall?
+\textbf{$\rightarrow$ What do you think of the result overall?}
 \end{frame}
 \clearpage
 
@@ -410,7 +395,7 @@ To do so, please use this folder structure:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{OUT / Backup}
+\frametitle{Backup}
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -429,70 +414,12 @@ To do so, please use this folder structure:
 		\item We find 69 /24 subnets and pick one random observed IP address in each of the 69 subnets
 		\item Using 1000 RIPE Atlas probes per measurement, we conduct traceroute measurements towards all 69 IP addresses
 		\end{itemize}
-		\item We map transit router's IP addresses to ISPs and IXPs 
-		%\begin{itemize}
-		%	\item Pitfall: Control for RIPE Atlas probes' home AS!
-		%\end{itemize}
+		\item We map transit router's IP addresses to ISPs and IXPs
 		\item We count what \% of routes traverses a certain ISP or IXP
 	\end{itemize}	
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Is global tracking feasible?}
-\framesubtitle{Eavesdropping capabilities on just 10 networks allows to follow \\APNS messages of over 80\% of users globally or nationally}
-\vspace{-10mm}
-\captionsetup{justification=centering}
-\begin{table}[!h]%[b]
-	\centering		
-	%	\begin{minipage}{\textwidth}
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{llrclr}
-			\toprule
-			Rank ~~~~~& \multicolumn{2}{c}{Global} && \multicolumn{2}{c}{Germany}	\\
-			\cmidrule{2-3} \cmidrule{5-6}
-			& IXP/AS  & \textSigma\% Paths &~~~& IXP/AS & \textSigma\% Paths   \\
-			\midrule
-			1 & AS3356 (L3)  & 25\%  && IXP DE-CIX & 30\% \\
-			2 & AS1299 (Telia) & 40\%  && AS3320 (DTAG) & 52\% \\
-			3 & AS174 (Cogent)  & 54\%  && IXP E-CIX & 61\% \\
-			4 & AS7922 (Comcast)~~~  & 61\%  && AS6830 (Liberty) ~~~& 69\% \\
-			5 & AS12322 (Free)  & 67\%  && AS31334 (VF/Kabel D) & 75\%\\
-			6 & AS6830 (Liberty)  & 71\%  && AS1273 (C\&W)& 78\%\\
-			7 & AS4637 (Telstra) & 75\%  && AS3356 (L3)  & 81\% \\
-			8 & AS6453 (Tata) & 78\%  && AS34419 (VF Group)& 84\% \\
-			9 & AS2828 (XO)  & 81\%  && AS680 (DFN) & 86\% \\
-			10 & AS3320 (DTAG) & 84\% && AS6805 (Telefonica) & 88\% \\
-			\bottomrule
-	\end{tabular}}
-	%	\end{minipage}
-	\label{tab:topnetworks}
-\end{table}
-\vspace{-3mm}
-\small{Note: \% is based on RIPE Atlas probe distribution as a proxy for APNs user distribution.}
-\end{frame}
-\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-\frametitle{Data, and Code}
-\framesubtitle{}
-
-\textbf{Data and Code: }\\
-%\texttt{\st{https://www.net.in.tum.de/users/scheitle/papers/cca-privacy/master.zip}} \\  % to blamish, others might use this kind of URL
-\url{https://github.com/tumi8/cca-privacy}\\
-\includegraphics[width=0.2\textwidth]{github-qr.png}
-
-Matthias Wachs, \underline{Quirin Scheitle}, and Georg Carle \\ 
-Chair of Network Architectures and Services --- \url{https://net.in.tum.de} \\
-TUM Informatics\\
-
-
-\end{frame}
-\clearpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FOLIENSTIL: Weisse Schrift auf blauem Grund
 %\PraesentationMasterWeissBlau
