@@ -27,7 +27,7 @@
 \renewcommand{\PraesentationFusszeileZusatz}{TMA'17 RIPE Atlas Lab}
 
 \title{TMA 2017 PhD School --- RIPE Atlas Lab}
-\author{Emile Aben, Quirin Scheitle}
+\author{Emile Aben (RIPE NCC), Quirin Scheitle(TUM)}
 \institute[]{\UniversitaetName \\ \FakultaetName}
 \date[\Datum]{Dublin, June 20, 2017}
 \subject{}
@@ -52,6 +52,7 @@
 \usepackage{subfloat}
 \usepackage{textgreek}  % for \textSigma
 \usepackage{soul} % for strikethrough using \st
+\usepackage{wasysym} % for smileys
 
 
 
@@ -113,16 +114,20 @@
 	\textbf{Learning Goals}
 	\begin{itemize}
 		\item Become familiar with RIPE Atlas, its capabilities, and its use
+		\begin{itemize}
+			\item Who has used RIPE Atlas before?
+		\end{itemize}
 		\item See how to plan measurements and analyze data along the lines of a TMA'17 paper
 		\item Run DNS and Traceroute measurements using RIPE Atlas
 	\end{itemize}	
 
 	\textbf{Outline}
 \begin{itemize}
-	\item Background on Research Questions to be answered
+	\item Background on RIPE Atlas (previous lecture)
+	\item Background on research questions to be answered
 	\item DNS Measurements
 	\item Traceroute Measurements
-	\item Mapping to ASes/IXPs
+	\item Mapping to ASes/IXPs --- controversial discussion expected! \smiley{}
 \end{itemize}	
 
 
@@ -133,6 +138,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Background}
+
+TMA'17 paper: \\
+\textit{Push Away Your Privacy: Precise User Tracking Based on TLS Client Certificate Authentication}
+
+\url{http://tma.ifip.org/wordpress/wp-content/uploads/2017/06/tma2017_paper2.pdf}
 
 \end{frame}
 \clearpage
@@ -209,6 +219,10 @@ Steps to be taken:
 	\item How to measure paths for user population connecting to backend servers?
 	\item How to map this to networks? What is a network in this context?
 \end{itemize}
+
+Take note: \textit{``Every paper has a flaw''} --- bonus points if you find them! \smiley{}
+
+Questions?
 \end{frame}
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -218,7 +232,7 @@ Steps to be taken:
 \frametitle{Step 1: Finding APNs Backend Servers}
 \framesubtitle{}
 
-From passive observations at 1 Vantage Point, we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17.0.0.0/8 range.
+From passive observations, we know that clients resolve [1-50]-courier.push.apple.com and then connect to 1 IP address in the 17.0.0.0/8 range.
 
 How to find all APNs backend servers?
 \pause
@@ -232,9 +246,9 @@ Do you have (a) RIPE Atlas Account (b) Voucher? (c) Python3 (d) Github Downloade
 
 \pause
 
-\textbf{Task: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution for ``your'' country.}\\
-Example: 42-courier.push.apple.com
-
+\textbf{Task: Pick 1 of `[1-50]-courier.push.apple.com` and do a RIPE Atlas DNS resolution \\ for ``your'' country.}\\
+Example: 42-courier.push.apple.com \\
+New DNS measurement: \url{https://atlas.ripe.net/measurements/form/} \\
 Note: More experienced RIPE Atlas users are invited to do resolutions for all 50 DNS names.
 
 \end{frame}
@@ -273,7 +287,7 @@ Our parsing script: \url{https://github.com/tumi8/cca-privacy/blob/master/ripe\_
 	\item Download via Browser or REST
 	\item JSON with abuf
 	\item Region-specific CNAMEs
-	\item Are these all IP addresses? Or just some?
+	\item Are these all the IP addresses used by the APNs backend? Or just some?
 \end{itemize}
 \small{
 Sample measurement result from June 2017: \url{https://github.com/quirins/tma17-ripeatlas-lab-participants/blob/master/data/dns/RIPE-Atlas-measurement-8831682.json}\\
@@ -291,7 +305,7 @@ Sample parsed result from June 2017 \url{https://github.com/quirins/tma17-ripeat
 \framesubtitle{}
 Our DNS queries have yielded a list of backend servers. Coming back to our Research Question, we want to quantify the number of networks an adversary has to eavesdrop on to see a significant number of logins directed to those backend servers. \\
 \textbf{Task: Define and execute a measurement strategy: Which RIPE Atlas settings? Which probes? Which targets?}\\
-Note: Again, RIPE Atlas novices can just run measurements towards 1 target IP address.
+Note: Again, RIPE Atlas novices can just run 1 measurement towards 1 target IP address.
 
 \pause
 \textbf{Discussion}
@@ -324,6 +338,9 @@ Traceroute measurement from Paper - Germany: \url{https://atlas.ripe.net/measure
 Fortunately, the link \url{https://github.com/tumi8/cca-privacy/tree/master/ripe_atlas/traceroute} contains the script ``traceroutes\_to\_asn\_ixp.py.''
 
 \textbf{Task: Call it using ./traceroutes\_to\_asn\_ixp.py your-measurement.json ip2ixp ip2as}\\
+
+ip2ixp (traiXroute/peeringDB): \url{https://github.com/tumi8/cca-privacy/blob/master/ripe_atlas/traceroute/ixp_subnets_v4.csv}
+recent ip2as (CAIDA pfx2as): \url{http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/06/routeviews-rv2-20170618-1000.pfx2as.gz}
 
 Sample Result from Paper:\\ \url{https://github.com/quirins/tma17-ripeatlas-lab-participants/blob/master/data/traceroute/result-5719599.json.result.txt}
 
@@ -372,7 +389,7 @@ How does the result look like for your country? Is that in line with the paper?
 \begin{itemize}
 	\item How did you like the exercise?
 	\item Useful parts / less useful parts?
-	\item Excited to use RIPE Atlas? :)
+	\item Excited to use RIPE Atlas? \smiley{}
 \end{itemize}
 \vspace{10mm}
 \textbf{Black Belt Track}: Share your results back to the exercise through a pull-request. 
